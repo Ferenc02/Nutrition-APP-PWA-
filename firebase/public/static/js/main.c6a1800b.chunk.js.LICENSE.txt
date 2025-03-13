@@ -1,0 +1,11 @@
+//! remove this when viggo has finished his daily intake
+
+//!----------------------------------------------
+
+//!Fires the same thing?
+
+//!This fires only when it has found 5 of the same barcode :D
+
+//!VERY IMPORTANT
+
+//!grape cant scan throwing error FIX THAT

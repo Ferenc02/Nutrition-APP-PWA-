@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.page_container {
+  position: relative;
+  min-height: 100vh;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button,
+select,
+.button-border {
+  transition: transform 250ms;
+  outline: none;
+}
+input:hover,
+input:focus,
+button:hover,
+button:focus,
+.button-border:hover,
+.button-border:focus {
+  transform: scale(1.1);
+}
+.no-hover-effect:focus,
+.no-hover-effect:hover {
+  transform: scale(1) !important;
+}
+.z-behind {
+  z-index: -99;
+}
+.h-min {
+  height: fit-content;
+}
+.calorie_counter_background {
+  box-shadow: inset 0rem 0rem 0rem 1.125rem #f6f8f9,
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.w-fit {
+  width: fit-content;
+}
+
+.drawingBuffer {
+  display: none !important;
+}
+.navbar {
+  background: linear-gradient(90deg, #dacc3e -33.81%, #34d399 47.86%);
+}
+.min-w-xs {
+  min-width: 5rem;
+}
+.input-reset {
+  background-color: white;
+}
+.input-reset:focus,
+.input-reset textarea:focus {
+  outline: none;
+}
+* {
+  animation: fade-in 300ms forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#scanner-container video {
+  object-fit: fill;
+  height: calc(100vh - 60px); /*change this maybe?*/
+}
